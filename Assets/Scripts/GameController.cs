@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour {
     }
 
     public void SpawnObstacle() {
-        float ranYPos = Random.Range(-2.75f, -1f);
+        float ranYPos = Random.Range(-2.75f, -1.6f);
 
         Vector2 spawnPos = new Vector2(11, ranYPos);
 

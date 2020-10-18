@@ -11,8 +11,12 @@ public class Player : MonoBehaviour {
 
     GameController m_gc;
 
-    void Start()
-    {
+    public AudioSource aus;
+
+    public AudioClip jumpSoud;
+    public AudioClip loseSound;
+
+    void Start() {
         m_rb = GetComponent<Rigidbody2D>();
         m_gc = FindObjectOfType<GameController>();
     }
@@ -22,6 +26,10 @@ public class Player : MonoBehaviour {
         if (isJumpKeyPressed && m_isGround) {
             m_rb.AddForce(Vector2.up * jumpForce);
             m_isGround = false;
+
+            if (aus && jumpSoud) {
+                aus.PlayOneShot(jumpSoud);
+            }
         }
     }
 
@@ -35,6 +43,10 @@ public class Player : MonoBehaviour {
         if (collision.CompareTag("Obstacle")) {
             Debug.Log("Player da va cham voi chuong ngai vat");
             m_gc.SetGameoverState(true);
+
+            if (aus && loseSound) {
+                aus.PlayOneShot(loseSound);
+            }
         }
 	}
 }
