@@ -403,7 +403,7 @@ PrefabInstance:
     - target: {fileID: 2800016048290512450, guid: f7d3c567560964faea0ecf78f98d1088,
         type: 3}
       propertyPath: jumpForce
-      value: 400
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4921235729658281464, guid: f7d3c567560964faea0ecf78f98d1088,
         type: 3}
@@ -474,6 +474,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 413640320515463842, guid: 5bbf0e641dd5c4a409708e3fac4955ce,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1195126322301173426, guid: 5bbf0e641dd5c4a409708e3fac4955ce,
         type: 3}
       propertyPath: m_LocalPosition.x
