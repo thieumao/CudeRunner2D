@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{91BA22D2-0B70-1A89-F6B4-323DAB980B4F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="32" Column="61" />
-      <File FileName="Assets/Scripts/Obstacle.cs" Line="16" Column="52" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="7" Column="4" />
+      <File FileName="Assets/Scripts/Player.cs" Line="46" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="35" Column="50" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="CudeRunner2D" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameController.cs" selected="True" />
+                <Node name="UIManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>

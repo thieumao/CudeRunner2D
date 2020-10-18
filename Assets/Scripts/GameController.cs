@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     public GameObject obstacle;
@@ -13,13 +14,18 @@ public class GameController : MonoBehaviour {
 
     bool m_isGameover;
 
+    UIManager m_ui;
+
     void Start() {
         m_spawnTime = 0;
+        m_ui = FindObjectOfType<UIManager>();
+        m_ui.SetScoreText("Score: " + m_score);
     }
 
     void Update() {
         if (m_isGameover) {
             m_spawnTime = 0;
+            m_ui.ShowGameoverPanel(true);
             return;
         }
 
@@ -41,6 +47,10 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    public void Replay() {
+        SceneManager.LoadScene("GamePlay");
+    }
+
     public void SetScore(int value) {
         m_score = value;
     }
@@ -51,6 +61,7 @@ public class GameController : MonoBehaviour {
 
     public void ScoreIncrement() {
         m_score++;
+        m_ui.SetScoreText("Score: " + m_score);
     }
 
     public bool IsGameover() {
