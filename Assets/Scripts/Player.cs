@@ -9,8 +9,12 @@ public class Player : MonoBehaviour {
 
     bool m_isGround;
 
-    void Start() {
+    GameController m_gc;
+
+    void Start()
+    {
         m_rb = GetComponent<Rigidbody2D>();
+        m_gc = FindObjectOfType<GameController>();
     }
 
     void Update() {
@@ -30,6 +34,7 @@ public class Player : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Obstacle")) {
             Debug.Log("Player da va cham voi chuong ngai vat");
+            m_gc.SetGameoverState(true);
         }
 	}
 }

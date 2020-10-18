@@ -18,6 +18,11 @@ public class GameController : MonoBehaviour {
     }
 
     void Update() {
+        if (m_isGameover) {
+            m_spawnTime = 0;
+            return;
+        }
+
         m_spawnTime -= Time.deltaTime;
 
         if (m_spawnTime <= 0) {
