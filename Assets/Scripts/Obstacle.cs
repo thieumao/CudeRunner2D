@@ -12,4 +12,11 @@ public class Obstacle : MonoBehaviour {
     void Update() {
         transform.position = transform.position + Vector3.left * moveSpeed * Time.deltaTime;
     }
+
+	private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("SceneLimit")) {
+            Destroy(gameObject);
+            Debug.Log("Da ra ngoai khung");
+        }
+	}
 }

@@ -26,4 +26,10 @@ public class Player : MonoBehaviour {
             m_isGround = true;
         }
 	}
+
+	private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Obstacle")) {
+            Debug.Log("Player da va cham voi chuong ngai vat");
+        }
+	}
 }
