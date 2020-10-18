@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4625200814540977249}
   - component: {fileID: 3324981608629854192}
   - component: {fileID: 6015651468919781841}
+  - component: {fileID: 2800016048290512450}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,9 +156,22 @@ PolygonCollider2D:
       - {x: -1.2430269, y: -1.3844826}
       - {x: -1.1030204, y: -1.6867793}
       - {x: -0.9372411, y: -1.8511873}
-      - {x: -0.66999996, y: -2}
-      - {x: 0.65, y: -2}
+      - {x: -0.90200746, y: -1.89173}
+      - {x: 0.78920543, y: -1.9071968}
       - {x: 0.75, y: -1.9521067}
       - {x: 0.9090804, y: -1.8651342}
       - {x: 1.0954694, y: -1.677379}
       - {x: 1.1172414, y: -1.6230265}
+--- !u!114 &2800016048290512450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4921235729658281464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd155594cbe847d990754160faa0606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 0
