@@ -60,6 +60,9 @@ public class GameController : MonoBehaviour {
     }
 
     public void ScoreIncrement() {
+        if (m_isGameover) {
+            return;
+        }
         m_score++;
         m_ui.SetScoreText("Score: " + m_score);
     }

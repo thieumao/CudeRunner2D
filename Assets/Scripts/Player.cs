@@ -41,12 +41,11 @@ public class Player : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Obstacle")) {
-            Debug.Log("Player da va cham voi chuong ngai vat");
-            m_gc.SetGameoverState(true);
-
-            if (aus && loseSound) {
+            if (aus && loseSound && !m_gc.IsGameover()) {
                 aus.PlayOneShot(loseSound);
             }
+
+            m_gc.SetGameoverState(true);
         }
 	}
 }
