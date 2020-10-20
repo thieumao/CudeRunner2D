@@ -48,4 +48,16 @@ public class Player : MonoBehaviour {
             m_gc.SetGameoverState(true);
         }
 	}
+
+    public void Jump() {
+        if (!m_isGround) {
+            return;
+        }
+        m_rb.AddForce(Vector2.up * jumpForce);
+        m_isGround = false;
+
+        if (aus && jumpSoud) {
+            aus.PlayOneShot(jumpSoud);
+        }
+    }
 }
