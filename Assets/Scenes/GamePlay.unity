@@ -1280,7 +1280,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: JUMP
+  m_Text: '
+
+'
 --- !u!222 &1492093669
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1323,10 +1325,10 @@ RectTransform:
   m_Father: {fileID: 1159986703}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -105.399994, y: 95.70001}
-  m_SizeDelta: {x: 210.83081, y: 191.46527}
+  m_AnchoredPosition: {x: -0.045654297, y: 223.4}
+  m_SizeDelta: {x: -0.03967285, y: 446.72455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751251003
 MonoBehaviour:
@@ -1395,7 +1397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.41718584, g: 0.7075472, b: 0.46162266, a: 1}
+  m_Color: {r: 0.25792095, g: 0.26415092, b: 0.25893122, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

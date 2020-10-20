@@ -1923,8 +1923,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameController_SpawnObstacle_m724674504F
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		// float ranYPos = Random.Range(-2.75f, -1.6f);
-		float L_0 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((-2.75f), (-1.6f), /*hidden argument*/NULL);
+		// float ranYPos = Random.Range(-4.0f, -2.0f);
+		float L_0 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((-4.0f), (-2.0f), /*hidden argument*/NULL);
 		V_0 = L_0;
 		// Vector2 spawnPos = new Vector2(11, ranYPos);
 		float L_1 = V_0;
